@@ -1,0 +1,295 @@
+@font-face {
+	src: url('../font/PFDinTextCompPro-Thin.woff2');
+	font-family: pdfThin;
+}
+@font-face {
+	src: url('../font/PFDinTextCompPro-Bold.woff2');
+	font-family: pdfBold;
+}
+@font-face {
+	src: url('../font/PFDinTextCompPro-Regular.woff2');
+	font-family: pdfRegular;
+}
+
+.top-line {
+	background-color: #111;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.top-line a {
+	color: lightgrey;
+}
+.top-line a:hover {
+	color: #33ccee;
+}
+header {
+	border-bottom: 3px solid #111;
+	padding-top: 20px;
+}
+.header-phone {
+	font-size: 23px;
+	font-family: pdfThin, sans-serif;
+	font-weight: bold;
+}
+.header-phone i {
+	color: #33ccee;
+	/*transform: scale(-1, 1);*/
+	transform: rotateY(180deg);
+	font-size: 14px;
+}
+.header-search i {
+	position: absolute;
+	color: #33ccee;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.header-search input {
+	padding-left: 35px;
+	width: 100%;
+}
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-family: pdfBold, sans-serif;
+}
+.header-nav a {
+	padding: 10px;
+	margin: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #000000;
+}
+.header-nav a:hover {
+	color: #33ccee;
+	box-shadow: 2px 2px 10px 1px grey;
+}
+li {
+	list-style-type: none;
+}
+.sub-menu {
+	display: flex;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .4s;
+	background: #fff;
+	width: 55%;
+	box-shadow: 2px 2px 10px 1px grey;
+}
+.sub-menu li {
+	padding-top: 5px;
+}
+.sub-menu a {
+	padding: 0;
+	margin: 0;
+	font-size: .9rem;
+	text-transform: none;
+	color: grey;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.sub-menu a:hover {
+	box-shadow: none;
+}
+.header-nav a:hover + .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+	color: #fff;
+}
+.sub-menu:hover {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+}
+.basket {
+	width: 180px;
+	height: 90px;
+	position: fixed;
+	z-index: 2;
+	display: block;
+	right: 5%;
+	margin-bottom: 10px;
+	line-height: 65%;
+	font-size: 25px;
+	font-family: pdfRegular, sans-serif;
+	font-weight: 500;
+}
+.basket p:first-child {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+}
+
+button {
+	background-color: #33ccee;
+	border: none;
+	color: #fff;
+	font-family: pdfBold, sans-serif;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #11bbdd;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+aside p {
+	padding-top: 30px;
+	text-transform: uppercase;
+	font-family: pdfBold, sans-serif;
+	font-size: 20px;
+}
+.aside-block {
+	display: block;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+span {
+	color: grey;
+}
+
+main {
+	background-color: #f4f4f4;
+}
+.main-head p:first-child {
+	padding-top: 30px;
+}
+.main-head a {
+	color: grey;
+}
+.main-head a:hover {
+	color: #111;
+}
+img:hover {
+	cursor: pointer;
+}
+h1 {
+	font-family: pdfThin, sans-serif;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+.p-small {
+	font-size: 13px;
+	color: grey;
+}
+main ul {
+	padding-left: 0;
+}
+main li {
+	display: inline-block;
+	padding-left: 30px;
+}
+.tag1 {
+	transform: translate(-32px, 29px);
+	display: none;
+}
+.tag2 {
+	transform: translate(-61px, 29px);
+	display: none;
+}
+.tag3 {
+	transform: translate(-35px, 29px);
+}
+.main-container {
+	padding-top: 20px;
+}
+.main-container-block {
+	padding: 10px;
+	background-color: #fff;
+	border-top: 0;
+	border-right: 10px solid #f4f4f4;
+	border-bottom: 20px solid #f4f4f4;
+	border-left: 10px solid #f4f4f4;
+	font-size: .9rem;
+}
+.main-container-block button {
+	text-transform: uppercase;
+	height: 30px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+.main-img {
+	position: relative;
+	overflow: hidden;
+}
+.main-img img {
+	height: 200px;
+	align-items: center;
+}
+.rate i {
+	color: #33ccee;
+}
+.rate i:hover {
+	cursor: pointer;
+	color: #11bbdd;
+}
+.p-rate {
+	padding: 0 5px;
+	display: inline-block;
+	font-size: 1.4rem;
+	font-family: pdfBold, sans-serif;
+}
+.main-button-bottom {
+	padding: 40px 10px 60px 10px;
+}
+.main-button {
+	font-family: pdfRegular, sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	height: 50px;
+	background-color: #f4f4f4;
+	color: #33ccee;
+	border: 1px solid #33ccee;
+}
+
+
+footer {
+	padding-top: 2%;
+	margin-bottom: 2%;
+	height: 5%;
+	border-top: 3px solid #111;
+	font-size: .9rem;
+}
+.footer-col1 {
+	/*margin-top: 38px;*/
+	padding-left: 0;
+	top: 20px;
+}
+footer p {
+	margin-bottom: 0;
+}
+footer p:first-child {
+	font-weight: bold;
+}
+footer a {
+	color: #33ccee;
+}
+footer a:hover {
+	color: #11bbdd;
+	font-weight: 500;
+}
+.footer-border {
+	border-right: 1px solid lightgrey;
+}
+.footer-social i {
+	color: #11bbdd;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #fff;
+	margin: 0 5px;
+	line-height: 48px;
+	border: 1px solid;
+	font-size: 1rem;
+}
+.footer-social i:hover {
+	color: #fff;
+	background-color: #11bbdd;
+	cursor: pointer;
+}

@@ -1,0 +1,131 @@
+.iphone-main-head {
+	background-color: #f4f4f4;
+}
+.iphone-main {
+	display: flex;
+	padding-bottom: 10%;
+}
+.iphone1 {
+	display: flex;
+	padding-left: 0;
+	padding-right: 0;
+}
+.iphone-img {
+
+	padding: 20% 0 20% 0;
+}
+.iphone-img img:hover {
+	box-shadow: 0 0 15px 2px grey;
+	cursor: pointer;
+}
+.iphone-main-img {
+	position: relative;
+	overflow: hidden;
+}
+.img-tag {
+	text-align: center;
+	color: lightgrey;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+.img-tag:hover {
+	color: #111;
+	cursor: pointer;
+}
+.scroll {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.scroll div:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+.scroll div {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid lightgrey;
+	color: lightgrey;
+}
+.scroll-1 {
+	transform: translate(5px);
+}
+.scroll div:hover {
+	color: #111;
+}
+.span-iphone {
+	color: green;
+}
+.span-iphone-bot {
+	padding-right: 10%;
+}
+.span-iphone i {
+	color: green;
+	padding-left: 10%;
+}
+.iphone2 p {
+	padding-top: 5%;
+	text-align: justify;
+	font-size: .9rem;
+	font-weight: 500;
+}
+.form-group {
+	display: inline-flex;
+	padding: 0;
+}
+#exampleFormControlSelect1 {
+	margin-left: 5%;
+	border: none;
+	padding: 8px 0;
+	outline:none;
+}
+#exampleFormControlSelect2 {
+	width: 88%;
+	margin-left: 5%;
+	border: none;
+	padding: 8px 0;
+	outline:none;
+}
+.p-rate-iphone {
+	padding-left: 2%;
+	padding-right: 13%;
+	display: inline-block;
+	font-size: 2rem !important;
+	font-family: pdfBold, sans-serif;
+}
+.rate-iphone button {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	width: 60%;
+	height: 50px;
+}
+.iphone3 {
+	padding-right: 0;
+}
+.iphone-art-right {
+	padding: 3% 10%;
+	margin-bottom: 5%;
+	background-color: #fff;
+}
+.iphone-art-right .header {
+	display: inline-flex;
+}
+.iphone-art-right i {
+	padding-right: 10%;
+	line-height: 1.5;
+}
+.iphone-art-right h2 {
+	padding-right: 15%;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: pdfRegular, sans-serif;
+}
+.iphone-art-right p {
+	font-size: .9rem;
+}
